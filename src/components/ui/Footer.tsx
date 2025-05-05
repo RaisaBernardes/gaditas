@@ -3,7 +3,7 @@ import { FaInstagram, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons
 export default function Footer() {
   return (
     <footer
-    className="bg-[#0F172B] relative dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 text-sm py-12 px-4"
+    className="bg-stone-800 relative dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 text-sm py-12 px-4"
    
   >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6 mb-6">

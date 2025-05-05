@@ -17,7 +17,7 @@ const Title: React.FC<TitleProps> = ({ }) => {
 
 const Finalizadora = () => {
   return (
-    <section className="bg-stone-700 text-white px-4 py-24 md:py-36 text-center"
+    <section className="bg-stone-800 text-white px-4 py-24 md:py-36 text-center"
     >
       <div className="max-w-4xl mx-auto justify-center items-center text-center text-white">
         <Title text="Toda grande obra começa com uma boa escolha.
