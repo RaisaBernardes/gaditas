@@ -1,0 +1,67 @@
+"use client";
+
+import VerifiedIcon from "@mui/icons-material/Verified";
+import HandymanIcon from "@mui/icons-material/Handyman";
+import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
+import TuneIcon from "@mui/icons-material/Tune";
+
+const features = [
+  {
+    title: "Entrega sem surpresas",
+    description: "Orçamento claro, prazo cumprido.",
+    icon: <VerifiedIcon className="text-[#2a3246]" />,
+  },
+  {
+    title: "Excelência artesanal",
+    description: "Cuidado em cada etapa.",
+    icon: <HandymanIcon className="text-[#2a3246]" />,
+  },
+  {
+    title: "Comunicação direta",
+    description: "Fale sempre com quem executa.",
+    icon: <ChatBubbleOutlineIcon className="text-[#2a3246]" />,
+  },
+  {
+    title: "Flexibilidade",
+    description:
+      "Projetos residenciais, reformas, áreas de lazer e muito mais.",
+    icon: <TuneIcon className="text-[#2a3246]" />,
+  },
+];
+
+export default function ValuesSplitCentered() {
+  return (
+    <section className="bg-white dark:bg-neutral-900 py-20 px-4 md:px-8">
+      <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
+        {/* Heading */}
+        <h2 className="text-3xl md:text-5xl font-semibold text-black dark:text-white">
+          Planejamento realista. <br /> Resultado pontual.
+        </h2>
+        <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg max-w-xl pt-6">
+          Alinhamos tudo desde o início: orçamentos transparentes e cronograma
+          respeitado do primeiro ao último dia.
+        </p>
+
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-16 w-full">
+          {features.map((item, idx) => (
+            <div
+              key={idx}
+              className="flex w-full items-start text-left gap-4 border border-gray-300 dark:border-neutral-700 rounded-md p-6 bg-white dark:bg-neutral-800 shadow-sm h-full"
+            >
+              <div className="mt-1">{item.icon}</div>
+              <div>
+                <p className="font-semibold text-[#0F172B] dark:text-white">
+                  {item.title}
+                </p>
+                <p className="text-neutral-600 dark:text-gray-300">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
