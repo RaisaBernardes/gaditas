@@ -15,7 +15,8 @@ const Title: React.FC<TitleProps> = ({ text }) => {
 
 const Finalizadora = () => {
   return (
-    <section className="bg-neutral-800 text-white-1 py-40 px-8 text-center">
+    <section className="bg-[#0F172B] text-white py-40 px-8 text-center"
+    >
       <div className="max-w-4xl mx-auto justify-center items-center text-center text-white">
         <Title text="Pronto para transformar seu projeto em realidade?" />
         <a
