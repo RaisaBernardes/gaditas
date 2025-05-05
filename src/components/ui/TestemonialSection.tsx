@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 export default function TestimonialSection() {
   return (
     <section className="bg-white dark:bg-neutral-900 py-24 px-4 md:px-8 mt-20">
