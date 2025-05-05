@@ -5,20 +5,23 @@ type TitleProps = {
   text: string;
 };
 
-const Title: React.FC<TitleProps> = ({ text }) => {
+const Title: React.FC<TitleProps> = ({ }) => {
   return (
     <h1 className="text-4xl md:text-5xl oswald-regular mb-10 leading-tight">
-      {text}
+      Toda grande obra começa com uma boa escolha.
+      A sua começa aqui.
     </h1>
+    
   );
 };
 
 const Finalizadora = () => {
   return (
-    <section className="bg-[#0F172B] text-white py-40 px-8 text-center"
+    <section className="bg-stone-700 text-white px-4 py-24 md:py-36 text-center"
     >
       <div className="max-w-4xl mx-auto justify-center items-center text-center text-white">
-        <Title text="Pronto para transformar seu projeto em realidade?" />
+        <Title text="Toda grande obra começa com uma boa escolha.
+      A sua começa aqui." />
         <a
           href="https://wa.me/5581999458630"
           target="_blank"

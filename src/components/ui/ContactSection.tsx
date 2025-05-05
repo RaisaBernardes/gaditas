@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
-    <section className="bg-white dark:bg-neutral-900 px-4 py-24 md:py-32">
+    <section className="bg-white dark:bg-neutral-900 px-4 py-24 md:py-40">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
         
         {/* LEFT SIDE */}

@@ -2,7 +2,7 @@
 
 export default function TestimonialSection() {
   return (
-    <section className="bg-white dark:bg-neutral-900 py-24 px-4 md:px-8 mt-20">
+    <section className="bg-neutral-100 dark:bg-neutral-900 py-24 px-4 md:px-8 mt-20 md:pb-36">
       <div className="max-w-7xl mx-auto px-4 flex flex-col items-start">
         
         {/* TÍTULO E DESCRIÇÃO */}
@@ -21,7 +21,7 @@ export default function TestimonialSection() {
         {/* BLOCO DEPOIMENTO */}
         <div className="w-full rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 grid md:grid-cols-2">
           {/* COLUNA ESQUERDA */}
-          <div className="p-8 flex flex-col justify-between">
+          <div className="p-8 flex flex-col justify-between bg-white">
             <div></div>
             <div>
               <p className="text-xs font-semibold text-neutral-500 dark:text-gray-400 uppercase mb-1">

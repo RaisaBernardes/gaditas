@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <hr className="border-neutral-500 my-4" />
+      <hr className=" border-neutral-500 my-4" />
 
       {/* Acknowledgment */}
       <div className="max-w-5xl mx-auto text-center text-neutral-400 text-sm">
