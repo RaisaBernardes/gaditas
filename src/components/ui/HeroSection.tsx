@@ -22,7 +22,7 @@ export default function HeroSection() {
  
         </h1>
         <p className="mt-6 text-sm md:text-base tracking-wide text-neutral-700 max-w-xl font-[family-name:var(--font-geist-mono)]">
-        Projetos residenciais, reformas, áreas de lazer, pavimentações e muito mais — feitos com rigor técnico,
+        Projetos residenciais, reformas, áreas de lazer, pavimentações e muito mais, feitos com rigor técnico,
          comunicação direta e um nível de cuidado que você sente do início ao fim.
         </p>
         <div className="flex gap-4 items-center flex-col sm:flex-row mt-6">
