@@ -18,7 +18,7 @@ export default function Footer() {
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaEnvelope className="hover:text-neutral-800 transition" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5599999999999" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="hover:text-neutral-800 transition" />
             </a>
            
@@ -34,7 +34,7 @@ export default function Footer() {
 
         {/* Links */}
         <div className="flex flex-col items-end gap-2 text-right text-xs">
-          <a href="/politica-de-privacidade" className="underline hover:text-white transition text-neutral-300">
+          <a href="/politicadeprivacidade" className="underline hover:text-white transition text-neutral-300">
             Política de Privacidade
           </a>
 
@@ -56,7 +56,7 @@ export default function Footer() {
 
       {/* Site credit */}
       <div className="text-right text-xs mt-4 text-neutral-400">
-        <a href="https://www.instagram.com/raisabernardes/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+        <a href="https://wa.me/5581999458630" target="_blank" rel="noopener noreferrer" className="hover:underline">
           Site por Raisa Bernardes
         </a>
       </div>

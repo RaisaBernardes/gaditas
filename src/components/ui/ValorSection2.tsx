@@ -31,17 +31,17 @@ const features = [
 
 export default function ValuesSplitCentered() {
   return (
-    <section className="bg-white dark:bg-neutral-900 py-20 md:py-36 px-4 md:px-8">
+    <section className="bg-white dark:bg-neutral-900 py-20 md:py-32 px-4 md:px-8">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold text-black dark:text-white">
-          Planejamento realista. <br /> Resultado pontual.
-        </h2>
-        <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg max-w-xl pt-6">
-        Cada obra começa com diálogo e termina com resultado. Alinhamos orçamento, cronograma e execução 
-        de forma transparente com foco total na entrega, qualidade e na sua satisfação.
-        </p>
-
+          <h2 className="text-3xl md:text-5xl font-semibold text-black dark:text-white">
+            Planejamento realista. <br /> Resultado pontual.
+          </h2>
+          <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg max-w-xl pt-2 md:pt-4">
+          Cada obra começa com diálogo e termina com resultado. Alinhamos orçamento, cronograma e execução 
+          de forma transparente com foco total na entrega, qualidade e na sua satisfação.
+          </p>
+      
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-16 w-full">
           {features.map((item, idx) => (

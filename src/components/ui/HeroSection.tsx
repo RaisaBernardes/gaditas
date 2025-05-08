@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section id="inicio" className="relative h-screen w-full overflow-hidden">
       {/* Background image with cover and responsiveness */}
       <div className="absolute inset-0 z-0">
         <Image
