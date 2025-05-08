@@ -12,31 +12,27 @@ import { useEffect } from "react";
 import Footer from "@/components/ui/Footer";
 import ScrollToHashOnLoad from '@/components/ScrollToHashOnLoad'
 
-
 export default function Home() {
-
   useEffect(() => {
     const lenis = new Lenis();
-    function raf(time: any) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
   }, []);
 
-
   return (
-    <div className="">
-      <main className="">
-      <ScrollToHashOnLoad />  
-       <HeroSection />
-       <ValorSection />
-       <ValorSection2 />
-       <ServicosSection />
-       <TestimonialSection />
-       <ContactSection />
-       <Finalizadora />
-       
+    <div>
+      <main>
+        <ScrollToHashOnLoad />
+        <HeroSection />
+        <ValorSection />
+        <ValorSection2 />
+        <ServicosSection />
+        <TestimonialSection />
+        <ContactSection />
+        <Finalizadora />
       </main>
       <footer>
         <Footer />
