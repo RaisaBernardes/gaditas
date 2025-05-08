@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import ScrollFadeSection from '../animations/ScrollFadeSection';
-import TextSplitReveal from '../animations/TextSplitReveal'
+
 
 export default function ValuesSplitLeftText() {
   return (
@@ -37,7 +37,7 @@ export default function ValuesSplitLeftText() {
           distance={25}
           threshold={0.3}
         >
-          <div className="relative self-end -mb-4 md:-mb-16">
+          <div className="relative self-end -mb-4 md:-mb-20">
             <Image
               src="/images/estrutura.png"
               alt="Estrutura"
