@@ -2,12 +2,12 @@ import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
   try {
-    const { name, email, phone, whatsapp, projectType, message } = await req.json();
+    const { name, email, whatsapp, message } = await req.json(); // removido phone e projectType
 
     const brevoPayload = {
       sender: {
         name: 'Site Gaditas',
-        email: process.env.SENDER_EMAIL || '', // assegura que nunca seja undefined
+        email: process.env.SENDER_EMAIL || '',
       },
       to: [
         {
@@ -25,10 +25,8 @@ export async function POST(req: Request) {
       `,
     };
 
-    // DEBUG: Mostra no console o que será enviado para o Brevo
     console.log("🔄 Enviando para o Brevo:", brevoPayload);
 
-    // ENVIA PARA O BREVO
     const response = await fetch('https://api.brevo.com/v3/smtp/email', {
       method: 'POST',
       headers: {
@@ -45,11 +43,10 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ message: 'Email enviado com sucesso!' });
-  } catch (error: any) {
-    console.error("❌ Erro ao enviar email:", error?.message || error);
-    return NextResponse.json(
-      { error: error?.message || 'Erro desconhecido' },
-      { status: 500 }
-    );
+  } catch (error) {
+    const errorMessage =
+      error instanceof Error ? error.message : 'Erro desconhecido';
+    console.error("❌ Erro ao enviar email:", errorMessage);
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
   }
 }
