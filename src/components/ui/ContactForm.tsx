@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, ChangeEvent, FormEvent, KeyboardEvent } from 'react'
+import { useState, ChangeEvent, FormEvent } from 'react'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -18,17 +18,16 @@ export default function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
   function handleChange(
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
     const { name, value } = e.target
     setFormData(prev => ({ ...prev, [name]: value }))
     setErrors(prev => ({ ...prev, [name]: '' }))
   }
 
-
   function validate() {
     let valid = true
-    const newErrors = { name: '', whatsapp: '', projectType: '' }
+    const newErrors = { name: '', whatsapp: '' }
 
     if (!formData.name.trim()) {
       newErrors.name = 'Nome é obrigatório.'
@@ -61,8 +60,8 @@ export default function ContactForm() {
       if (!response.ok) throw new Error('Erro ao enviar')
 
       setStatus('success')
-    } catch (err) {
-      console.error(err)
+    } catch (err: any) {
+      console.error(err?.message || err)
       setStatus('error')
     }
   }
