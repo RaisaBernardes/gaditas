@@ -7,7 +7,7 @@ export default function TestimonialSection() {
         
         {/* TÍTULO E DESCRIÇÃO */}
         <div className="space-y-4 z-20 max-w-lg mb-16">
-          <h3 className="uppercase tracking-widest text-xs text-neutral-400 font-[family-name:var(--font-geist-mono)]">
+          <h3 className="uppercase tracking-widest text-xs text-neutral-400 geist-mono-400 ">
             DEPOIMENTOS
           </h3>
           <h2 className="text-4xl md:text-6xl text-stone-800 dark:text-white teko-title">

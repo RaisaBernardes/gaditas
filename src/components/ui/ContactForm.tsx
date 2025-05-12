@@ -140,7 +140,7 @@ export default function ContactForm() {
           {/* Botão */}
           <button
             type="submit"
-            className="w-full text-white px-6 py-3 rounded-md hover:bg-neutral-800 bg-neutral-700 transition font-[family-name:var(--font-geist-mono)] text-base"
+            className="w-full text-white px-6 py-3 rounded-md hover:bg-neutral-800 bg-neutral-700 transition geist-mono-400 text-base"
           >
             {status === 'loading' ? 'Enviando...' : 'Enviar'}
           </button>

@@ -56,7 +56,7 @@ export default function ServicesParallax() {
       
       {/* LEFT SIDE */}
       <div className="w-full justify-start md:w-1/2 md:sticky top-24 px-4 md:px-8 flex flex-col max-w-[600px] mx-auto md:mx-0">
-        <h3 className="uppercase tracking-widest text-xs pb-2 text-neutral-400 font-[family-name:var(--font-geist-mono)]">
+        <h3 className="uppercase tracking-widest text-xs pb-2 text-neutral-400 geist-mono-400 ">
           Nossos Serviços
         </h3>
         <h2 className="text-4xl md:text-5xl  text-stone-800 dark:text-white teko-title">
@@ -67,7 +67,7 @@ export default function ServicesParallax() {
         </p>
         <div className="flex gap-2 items-center flex-col sm:flex-row mt-6">
           <a
-            className="font-[family-name:var(--font-geist-mono)] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-700 bg-stone-800 text-sm sm:text-sm h-8 sm:h-10 px-4 sm:px-5 sm:w-auto"
+            className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-700 bg-stone-800 text-sm sm:text-sm h-8 sm:h-10 px-4 sm:px-5 sm:w-auto"
             href="#orcamento"
           >
             Solicitar Orçamento

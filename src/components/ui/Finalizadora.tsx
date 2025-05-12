@@ -26,7 +26,7 @@ const Finalizadora = () => {
           href="https://wa.me/5581999458630"
           target="_blank"
           rel="noopener noreferrer"
-         className="font-[family-name:var(--font-geist-mono)] inline-block px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition"
+         className="geist-mono-400 inline-block px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition"
         >
           Solicitar orçamento
         </a>

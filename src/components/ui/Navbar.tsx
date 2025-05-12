@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Left - Brand + Links */}
-          <ul className="flex gap-6 text-sm font-light text-neutral-500 font-[family-name:var(--font-geist-mono)]">
+          <ul className="flex gap-6 text-sm font-light text-neutral-500 geist-mono-400 uppercase">
             <li><ScrollToSectionLink sectionId="inicio" className="text-stone-800 font-medium">GADITAS</ScrollToSectionLink></li>
             <li className="hidden md:block"><ScrollToSectionLink sectionId="inicio" className="hover:text-neutral-800">Início</ScrollToSectionLink></li>
             <li className="hidden md:block"><ScrollToSectionLink sectionId="sobre" className="hover:text-neutral-800">Sobre</ScrollToSectionLink></li>
@@ -30,7 +30,7 @@ const Navbar = () => {
             <Link
               href="#contato"
               scroll={true}
-              className="hidden md:block text-sm font-light bg-white text-stone-800 px-4 py-2 rounded-4xl hover:bg-neutral-100 hover:text-neutral-800 border-1 transition font-[family-name:var(--font-geist-mono)]"
+              className="hidden md:block text-sm font-light bg-white text-stone-800 px-4 py-2 rounded-4xl hover:bg-neutral-100 hover:text-neutral-800 border-1 transition geist-mono-400"
             >
               Contato
             </Link>

@@ -21,13 +21,13 @@ export default function HeroSection() {
         Sua <span className="font-semibold">obra.</span> <br/>  Nosso <span className="font-semibold">compromisso.</span>
  
         </h1>
-        <p className="mt-6 text-sm md:text-base tracking-wide text-neutral-700 max-w-xl font-[family-name:var(--font-geist-mono)]">
+        <p className="mt-6 text-sm md:text-base tracking-wide text-neutral-700 max-w-xl geist-mono-500">
         Projetos residenciais, reformas, áreas de lazer, pavimentações e muito mais, feitos com rigor técnico,
          comunicação direta e um nível de cuidado que você sente do início ao fim.
         </p>
         <div className="flex gap-4 items-center flex-col sm:flex-row mt-6">
           <a
-            className="font-[family-name:var(--font-geist-mono)] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-800 bg-neutral-700 text-sm sm:text-sm h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-800 bg-neutral-700 text-sm sm:text-sm h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="#orcamento"
           >
             Começar projeto
