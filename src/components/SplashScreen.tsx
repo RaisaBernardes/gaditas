@@ -8,33 +8,42 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
   const textRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    // Reset scroll position immediately when component mounts
     window.scrollTo(0, 0)
-    
-    // Prevent scrolling during splash screen
     document.body.style.overflow = 'hidden'
 
     const tl = gsap.timeline({
       onComplete: () => {
-        // Enable scrolling again
         document.body.style.overflow = ''
-        // Ensure page is at the top before completing
         window.scrollTo({ top: 0, behavior: 'auto' })
         onComplete()
       },
     })
 
-    // Animate the logo text
-    tl.fromTo(
-      textRef.current,
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 1, ease: 'power2.out' }
-    )
+    const letters = textRef.current?.querySelectorAll('span')
 
-    // Use translateY transform instead of y property for better performance
-    // Change direction to move DOWN instead of UP (use '100%' instead of '-100%')
+    if (letters && letters.length > 0) {
+      tl.fromTo(
+        letters,
+        {
+          opacity: 0,
+          y: 10,
+          scale: 0.98,
+          filter: 'blur(4px)',
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          filter: 'blur(0px)',
+          duration: 0.6,
+          ease: 'power2.out',
+          stagger: 0.015, // apenas para evitar efeito seco (mas super discreto)
+        }
+      )
+    }
+
     tl.to(splashRef.current, {
-      y: '100%', // Changed from '-100%' to '100%' to make it slide down
+      y: '100%',
       duration: 1.2,
       delay: 1,
       ease: 'power4.inOut',
@@ -44,14 +53,18 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
   return (
     <div
       ref={splashRef}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black"
-      style={{ transform: 'translateY(0)' }} // Explicitly set initial position
+      className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900"
+      style={{ transform: 'translateY(0)' }}
     >
       <div
         ref={textRef}
-        className="text-white text-4xl md:text-6xl font-bold tracking-wide"
+        className="flex gap-[0.04em] text-white text-md md:text-xl font-[family-name:var(--font-geist-mono)] tracking-widest uppercase"
       >
-        gaditas
+        {'gaditas'.split('').map((char, index) => (
+          <span key={index} className="inline-block">
+            {char}
+          </span>
+        ))}
       </div>
     </div>
   )

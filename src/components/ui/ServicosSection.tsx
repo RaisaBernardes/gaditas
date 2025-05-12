@@ -52,14 +52,14 @@ export default function ServicesParallax() {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
-    <section id="servicos" className="flex flex-col md:flex-row bg-white dark:bg-neutral-900 px-4 py-24 md:pt-40 items-start gap-8">
+    <section id="servicos" className="flex flex-col md:flex-row bg-white dark:bg-neutral-900 px-4 py-24 md:pt-40 items-start mx-auto gap-8 max-w-[1380px]">
       
       {/* LEFT SIDE */}
-      <div className="w-full justify-start md:w-1/2 md:sticky top-24 px-4 md:px-16 flex flex-col max-w-[600px] mx-auto md:mx-0">
+      <div className="w-full justify-start md:w-1/2 md:sticky top-24 px-4 md:px-8 flex flex-col max-w-[600px] mx-auto md:mx-0">
         <h3 className="uppercase tracking-widest text-xs pb-2 text-neutral-400 font-[family-name:var(--font-geist-mono)]">
           Nossos Serviços
         </h3>
-        <h2 className="text-4xl md:text-5xl  text-black dark:text-white teko-title">
+        <h2 className="text-4xl md:text-5xl  text-stone-800 dark:text-white teko-title">
           Construção sob medida e execução com excelência.
         </h2>
         <p className="mt-2 text-base md:text-lg text-neutral-600 dark:text-gray-300">
@@ -67,7 +67,7 @@ export default function ServicesParallax() {
         </p>
         <div className="flex gap-2 items-center flex-col sm:flex-row mt-6">
           <a
-            className="font-[family-name:var(--font-geist-mono)] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-700 bg-[#0F172B] text-sm sm:text-sm h-8 sm:h-10 px-4 sm:px-5 sm:w-auto"
+            className="font-[family-name:var(--font-geist-mono)] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-700 bg-stone-800 text-sm sm:text-sm h-8 sm:h-10 px-4 sm:px-5 sm:w-auto"
             href="#orcamento"
           >
             Solicitar Orçamento
@@ -78,12 +78,13 @@ export default function ServicesParallax() {
       {/* RIGHT SIDE */}
       <div
         ref={scrollRef}
-        className={`w-full md:w-1/2 ${isMobile ? '' : 'h-[200vh] overflow-hidden'} pr-0 md:pr-16`}
+        className="w-full md:w-1/2 pr-0 md:pr-16 mt-100"
       >
         <motion.div
           style={{ y: isMobile ? undefined : y }}
-          className={`space-y-10 ${isMobile ? '' : 'sticky top-0'}`}
+          className="space-y-10 relative"
         >
+
           {services.map((service, index) => (
             <div
               key={index}
@@ -99,7 +100,7 @@ export default function ServicesParallax() {
                 />
               </div>
               <div className="md:w-3/5 text-center md:text-left">
-                <h3 className="text-lg md:text-2xl text-[#0F172B] dark:text-white teko-subtitle">
+                <h3 className="text-lg md:text-2xl text-stone-800 dark:text-white teko-subtitle">
                   {service.title}
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-300  pt-2">

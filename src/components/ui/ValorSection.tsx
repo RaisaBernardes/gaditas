@@ -7,12 +7,12 @@ import ScrollFadeSection from '../animations/ScrollFadeSection';
 
 export default function ValuesSplitLeftText() {
   return (
-    <section id="sobre" className="bg-white dark:bg-neutral-900 px-4 md:px-8 py-24 md:py-36">
+    <section id="sobre" className="bg-white dark:bg-neutral-900 px-4 md:px-10 py-24 md:py-36 max-w-[1380px]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
         {/* LEFT CONTENT */}
         <div className="space-y-3 md:space-y-6 self-end">
           <ScrollFadeSection>
-            <h2 className="text-4xl md:text-6xl  text-[#0F172B] dark:text-white teko-title ">
+            <h2 className="text-4xl md:text-6xl  text-stone-800 dark:text-white teko-title ">
               Mais do que uma construtora. Um parceiro de confiança.
             </h2>
           </ScrollFadeSection>

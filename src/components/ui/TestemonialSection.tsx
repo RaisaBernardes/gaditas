@@ -10,7 +10,7 @@ export default function TestimonialSection() {
           <h3 className="uppercase tracking-widest text-xs text-neutral-400 font-[family-name:var(--font-geist-mono)]">
             DEPOIMENTOS
           </h3>
-          <h2 className="text-4xl md:text-6xl text-[#0F172B] dark:text-white teko-title">
+          <h2 className="text-4xl md:text-6xl text-stone-800 dark:text-white teko-title">
             O que nossos clientes dizem sobre nós
           </h2>
           <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg">
@@ -19,7 +19,7 @@ export default function TestimonialSection() {
         </div>
 
         {/* BLOCO DEPOIMENTO */}
-        <div className="w-full rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 grid md:grid-cols-2">
+        <div className="w-full rounded-2xl overflow-hidden border border-gray-200 grid md:grid-cols-2">
           {/* COLUNA ESQUERDA */}
           <div className="p-8 flex flex-col justify-between bg-white">
             <div></div>
@@ -27,27 +27,27 @@ export default function TestimonialSection() {
               <p className="text-xs font-semibold text-neutral-500 dark:text-gray-400 uppercase mb-1">
                 Serviço realizado:
               </p>
-              <p className="text-lg text-[#0F172B] dark:text-white font-medium">
+              <p className="text-lg text-stone-800 dark:text-white font-medium">
                 Nome do serviço
               </p>
             </div>
           </div>
 
           {/* COLUNA DIREITA */}
-          <div className="bg-slate-200 p-8 md:p-12 flex flex-col justify-between">
+          <div className="bg-neutral-300 p-8 md:p-12 flex flex-col justify-between">
             <div>
-              <p className="text-4xl text-[#0F172B] mb-6">“</p>
-              <p className="text-xl text-[#0F172B] leading-relaxed">
+              <p className="text-4xl text-stone-800 mb-6">“</p>
+              <p className="text-xl text-stone-800 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida magna id ipsum
                 lacinia, sit amet ullamcorper enim bibendum. Phasellus leo ligula, feugiat sit amet nisl
                 at, hendrerit dictum elit. Duis et cursus magna, sed suscipit diam.
               </p>
             </div>
             <div className="mt-8">
-              <p className="text-base font-semibold text-[#0F172B] roboto-condensed-700">
+              <p className="text-base font-semibold text-stone-800 roboto-condensed-700">
                 Simon Levinson
               </p>
-              <p className="text-sm text-[#0F172B]">
+              <p className="text-sm text-stone-800">
                 Aqui é a ocupação da pessoa
               </p>
             </div>

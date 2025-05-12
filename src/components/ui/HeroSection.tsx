@@ -17,7 +17,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-black">
-        <h1 className="text-5xl md:text-8xl text-[#0F172B] teko-hero pt-6">
+        <h1 className="text-5xl md:text-8xl text-stone-800 teko-hero pt-6">
         Sua <span className="font-semibold">obra.</span> <br/>  Nosso <span className="font-semibold">compromisso.</span>
  
         </h1>
@@ -27,7 +27,7 @@ export default function HeroSection() {
         </p>
         <div className="flex gap-4 items-center flex-col sm:flex-row mt-6">
           <a
-            className="font-[family-name:var(--font-geist-mono)] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-700 bg-[#0F172B] text-sm sm:text-sm h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+            className="font-[family-name:var(--font-geist-mono)] rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-800 bg-neutral-700 text-sm sm:text-sm h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
             href="#orcamento"
           >
             Começar projeto
