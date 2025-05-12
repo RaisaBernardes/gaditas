@@ -1,59 +1,168 @@
-// src/components/ContactForm.tsx
-"use client"
+'use client'
+
+import { useState, ChangeEvent, FormEvent, KeyboardEvent } from 'react'
 
 export default function ContactForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    whatsapp: '',
+    projectType: '',
+    message: '',
+  })
+
+  const [errors, setErrors] = useState({
+    name: '',
+    whatsapp: '',
+    projectType: '',
+  })
+
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+
+  function handleChange(
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) {
+    const { name, value } = e.target
+    setFormData(prev => ({ ...prev, [name]: value }))
+    setErrors(prev => ({ ...prev, [name]: '' }))
+  }
+
+  function handlePhoneKeyPress(e: KeyboardEvent<HTMLInputElement>) {
+    if (e.key === 'Enter' && formData.phone.trim()) {
+      e.preventDefault()
+      setFormData(prev => ({ ...prev, whatsapp: prev.phone }))
+    }
+  }
+
+  function validate() {
+    let valid = true
+    const newErrors = { name: '', whatsapp: '', projectType: '' }
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'Nome é obrigatório.'
+      valid = false
+    }
+
+    if (!formData.whatsapp.trim()) {
+      newErrors.whatsapp = 'WhatsApp é obrigatório.'
+      valid = false
+    }
+
+    setErrors(newErrors)
+    return valid
+  }
+
+  async function handleSubmit(e: FormEvent) {
+    e.preventDefault()
+
+    if (!validate()) return
+
+    setStatus('loading')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) throw new Error('Erro ao enviar')
+
+      setStatus('success')
+    } catch (err) {
+      console.error(err)
+      setStatus('error')
+    }
+  }
+
   return (
-    <form className="flex flex-col gap-6 w-full">
-      <div className="flex flex-col">
-        <label htmlFor="nome" className="text-sm font-medium text-gray-800">Nome</label>
-        <input
-          type="text"
-          id="nome"
-          name="nome"
-          required
-          className="border border-gray-300 rounded-md p-3 mt-1"
-        />
-      </div>
+    <div className="py-8">
+      <div className="mx-auto px-4 lg:max-w-xl">
+        <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Nome */}
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              Nome <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              onChange={handleChange}
+              value={formData.name}
+              placeholder="Seu nome"
+              className={`mt-1 p-2 w-full border rounded-md ${errors.name ? 'border-red-500' : ''}`}
+            />
+            {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+          </div>
 
-      <div className="flex flex-col">
-        <label htmlFor="telefone" className="text-sm font-medium text-gray-800">Telefone</label>
-        <input
-          type="tel"
-          id="telefone"
-          name="telefone"
-          required
-          className="border border-gray-300 rounded-md p-3 mt-1"
-        />
-      </div>
+          {/* Email (opcional) */}
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              Email (opcional)
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              onChange={handleChange}
+              value={formData.email}
+              placeholder="seu@email.com"
+              className="mt-1 p-2 w-full border rounded-md"
+            />
+          </div>
 
-      <div className="flex flex-col">
-        <label htmlFor="email" className="text-sm font-medium text-gray-800">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          className="border border-gray-300 rounded-md p-3 mt-1"
-        />
-      </div>
+          {/* WhatsApp */}
+          <div>
+            <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700">
+              WhatsApp <span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              name="whatsapp"
+              id="whatsapp"
+              onChange={handleChange}
+              value={formData.whatsapp}
+              placeholder="(99) 99999-9999"
+              className={`mt-1 p-2 w-full border rounded-md ${errors.whatsapp ? 'border-red-500' : ''}`}
+            />
+            {errors.whatsapp && <p className="text-red-500 text-sm">{errors.whatsapp}</p>}
+          </div>
 
-      <div className="flex flex-col">
-        <label htmlFor="mensagem" className="text-sm font-medium text-gray-800">Mensagem</label>
-        <textarea
-          id="mensagem"
-          name="mensagem"
-          rows={5}
-          required
-          className="border border-gray-300 rounded-md p-3 mt-1 resize-none"
-        ></textarea>
-      </div>
+          {/* Mensagem */}
+          <div>
+            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              Mensagem
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              rows={4}
+              onChange={handleChange}
+              value={formData.message}
+              placeholder="Fale um pouco sobre seu projeto..."
+              className="mt-1 p-2 w-full border rounded-md"
+            />
+          </div>
 
-      <button
-        type="submit"
-        className="mt-4 text-white px-6 py-3 rounded-md hover:bg-neutral-800 bg-neutral-700 transition font-[family-name:var(--font-geist-mono)]"
-      >
-        Enviar
-      </button>
-    </form>
-  );
+          {/* Botão */}
+          <button
+            type="submit"
+            className="w-full text-white px-6 py-3 rounded-md hover:bg-neutral-800 bg-neutral-700 transition font-[family-name:var(--font-geist-mono)] text-base"
+          >
+            {status === 'loading' ? 'Enviando...' : 'Enviar'}
+          </button>
+
+          {/* Status */}
+          {status === 'success' && (
+            <p className="text-green-600 font-medium text-center mt-4">Mensagem enviada com sucesso!</p>
+          )}
+          {status === 'error' && (
+            <p className="text-red-800 font-medium text-center mt-4">Erro ao enviar. Tente novamente.</p>
+          )}
+        </form>
+      </div>
+    </div>
+  )
 }
