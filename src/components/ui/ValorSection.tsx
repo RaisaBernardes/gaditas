@@ -12,7 +12,7 @@ export default function ValuesSplitLeftText() {
         {/* LEFT CONTENT */}
         <div className="space-y-3 md:space-y-6 self-end">
           <ScrollFadeSection>
-            <h2 className="text-4xl md:text-6xl  text-stone-800 dark:text-white teko-title ">
+            <h2 className="text-4xl md:text-6xl  text-stone-800 dark:text-white font-['Teko']">
               Mais do que uma construtora. Um parceiro de confiança.
             </h2>
           </ScrollFadeSection>
@@ -26,7 +26,7 @@ export default function ValuesSplitLeftText() {
             cada obra. Atuamos em todo tipo de projeto: residenciais, comerciais, reformas, ampliações, áreas 
             de lazer e muito mais. Aqui, você não é apenas cliente, é parte ativa da construção. Cada etapa é 
             executada com atenção aos detalhes, diálogo direto e respeito absoluto pelo que é mais importante 
-            pra você: um resultado que gera orgulho.
+            pra você: um resultado que gera satisfação.
           </p>
           </ScrollFadeSection>
         </div>
