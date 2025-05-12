@@ -60,8 +60,9 @@ export default function ContactForm() {
       if (!response.ok) throw new Error('Erro ao enviar')
 
       setStatus('success')
-    } catch (err: any) {
-      console.error(err?.message || err)
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : 'Erro desconhecido'
+      console.error(errorMessage)
       setStatus('error')
     }
   }
