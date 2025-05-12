@@ -6,16 +6,13 @@ export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
     whatsapp: '',
-    projectType: '',
     message: '',
   })
 
   const [errors, setErrors] = useState({
     name: '',
     whatsapp: '',
-    projectType: '',
   })
 
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
@@ -28,12 +25,6 @@ export default function ContactForm() {
     setErrors(prev => ({ ...prev, [name]: '' }))
   }
 
-  function handlePhoneKeyPress(e: KeyboardEvent<HTMLInputElement>) {
-    if (e.key === 'Enter' && formData.phone.trim()) {
-      e.preventDefault()
-      setFormData(prev => ({ ...prev, whatsapp: prev.phone }))
-    }
-  }
 
   function validate() {
     let valid = true
