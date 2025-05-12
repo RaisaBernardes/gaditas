@@ -34,7 +34,7 @@ export default function ValuesSplitCentered() {
     <section className="bg-white dark:bg-neutral-900 py-20 md:py-32 px-4 md:px-8">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
         {/* Heading */}
-          <h2 className="text-3xl md:text-5xl font-semibold text-black dark:text-white">
+          <h2 className="text-5xl md:text-6xl text-black dark:text-white teko-title">
             Planejamento realista. <br /> Resultado pontual.
           </h2>
           <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg max-w-xl pt-2 md:pt-4">
@@ -51,7 +51,7 @@ export default function ValuesSplitCentered() {
             >
               <div className="mt-1">{item.icon}</div>
               <div>
-                <p className="font-semibold text-[#0F172B] dark:text-white">
+                <p className="text-[#0F172B] dark:text-white teko-subtitle text-lg md:text-2xl">
                   {item.title}
                 </p>
                 <p className="text-neutral-600 dark:text-gray-300">

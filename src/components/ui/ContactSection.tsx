@@ -8,7 +8,7 @@ export default function ContactSection() {
         
         {/* LEFT SIDE */}
         <div className="space-y-6">
-          <h2 className="text-4xl md:text-6xl font-semibold text-black dark:text-white">
+          <h2 className="text-4xl md:text-7xl text-black dark:text-white teko-title">
           Vamos tirar seu projeto do papel?
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-300 max-w-md">
@@ -16,7 +16,7 @@ export default function ContactSection() {
           </p>
 
           <div className="pt-6 text-sm text-gray-800 dark:text-gray-200 space-y-4">
-            <p className="font-semibold">Detalhes de Contato</p>
+            <p className="roboto-condensed-700 tracking-tight">Detalhes de Contato</p>
             <address className="not-italic space-y-3">
               
               {/* Localização */}

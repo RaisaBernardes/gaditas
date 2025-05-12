@@ -59,7 +59,7 @@ export default function ServicesParallax() {
         <h3 className="uppercase tracking-widest text-xs pb-2 text-neutral-400 font-[family-name:var(--font-geist-mono)]">
           Nossos Serviços
         </h3>
-        <h2 className="text-3xl md:text-4xl font-semibold text-black dark:text-white">
+        <h2 className="text-4xl md:text-5xl  text-black dark:text-white teko-title">
           Construção sob medida e execução com excelência.
         </h2>
         <p className="mt-2 text-base md:text-lg text-neutral-600 dark:text-gray-300">
@@ -99,7 +99,7 @@ export default function ServicesParallax() {
                 />
               </div>
               <div className="md:w-3/5 text-center md:text-left">
-                <h3 className="text-lg md:text-xl font-semibold text-[#0F172B] dark:text-white">
+                <h3 className="text-lg md:text-2xl text-[#0F172B] dark:text-white teko-subtitle">
                   {service.title}
                 </h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-300  pt-2">

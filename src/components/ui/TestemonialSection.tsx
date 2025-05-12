@@ -10,8 +10,8 @@ export default function TestimonialSection() {
           <h3 className="uppercase tracking-widest text-xs text-neutral-400 font-[family-name:var(--font-geist-mono)]">
             DEPOIMENTOS
           </h3>
-          <h2 className="text-3xl md:text-5xl font-semibold text-[#0F172B] dark:text-white">
-            O que nossos clientes dizem
+          <h2 className="text-4xl md:text-6xl text-[#0F172B] dark:text-white teko-title">
+            O que nossos clientes dizem sobre nós
           </h2>
           <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg">
             Depoimentos de quem viveu a experiência de um projeto feito com excelência.
@@ -44,7 +44,7 @@ export default function TestimonialSection() {
               </p>
             </div>
             <div className="mt-8">
-              <p className="text-base font-semibold text-[#0F172B]">
+              <p className="text-base font-semibold text-[#0F172B] roboto-condensed-700">
                 Simon Levinson
               </p>
               <p className="text-sm text-[#0F172B]">

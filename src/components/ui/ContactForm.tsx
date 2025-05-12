@@ -50,7 +50,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="mt-4 text-white px-6 py-3 rounded-md bg-[#1e2434] hover:bg-neutral-700 transition"
+        className="mt-4 text-white px-6 py-3 rounded-md bg-[#1e2434] hover:bg-neutral-700 transition font-[family-name:var(--font-geist-mono)]"
       >
         Enviar
       </button>

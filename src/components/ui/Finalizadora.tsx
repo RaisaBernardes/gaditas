@@ -7,7 +7,7 @@ type TitleProps = {
 
 const Title: React.FC<TitleProps> = ({ }) => {
   return (
-    <h1 className="text-4xl md:text-5xl oswald-regular mb-10 leading-tight">
+    <h1 className="text-5xl md:text-7xl mb-10 teko-title">
       Toda grande obra começa com uma boa escolha.
       A sua começa aqui.
     </h1>
@@ -19,9 +19,9 @@ const Finalizadora = () => {
   return (
     <section className="bg-stone-800 text-white px-4 py-24 md:py-36 text-center"
     >
-      <div className="max-w-4xl mx-auto justify-center items-center text-center text-white">
+      <div className="max-w-4xl mx-auto justify-center items-center text-center text-white ">
         <Title text="Toda grande obra começa com uma boa escolha.
-      A sua começa aqui." />
+      A sua começa aqui."/>
         <a
           href="https://wa.me/5581999458630"
           target="_blank"

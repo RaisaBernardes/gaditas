@@ -12,7 +12,7 @@ export default function ValuesSplitLeftText() {
         {/* LEFT CONTENT */}
         <div className="space-y-3 md:space-y-6 self-end">
           <ScrollFadeSection>
-            <h2 className="text-3xl md:text-5xl font-semibold text-[#0F172B] dark:text-white">
+            <h2 className="text-4xl md:text-6xl  text-[#0F172B] dark:text-white teko-title ">
               Mais do que uma construtora. Um parceiro de confiança.
             </h2>
           </ScrollFadeSection>
@@ -33,9 +33,9 @@ export default function ValuesSplitLeftText() {
 
         {/* RIGHT IMAGE */}
         <ScrollFadeSection
-          delay={0.5}
-          distance={25}
+          distance={5}
           threshold={0.3}
+          duration ={0.8}
         >
           <div className="relative self-end -mb-4 md:-mb-20">
             <Image
