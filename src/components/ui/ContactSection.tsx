@@ -4,10 +4,10 @@ import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 export default function ContactSection() {
   return (
     <section id="contato" className="bg-white dark:bg-neutral-900 px-4 md:px-10 py-24 md:py-40">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-3 md:gap-12">
         
         {/* LEFT SIDE */}
-        <div className="space-y-6">
+        <div className="space-y-3 md:space-y-6">
           <h2 className="text-4xl md:text-7xl text-stone-800 dark:text-white teko-title">
           Vamos tirar seu projeto do papel?
           </h2>
@@ -15,7 +15,7 @@ export default function ContactSection() {
             Preencha o formulário e receba um atendimento claro, ágil e alinhado com o que você realmente precisa.
           </p>
 
-          <div className="pt-6 text-sm text-stone-800 dark:text-gray-200 space-y-4">
+          <div className="pt-6 text-base md:text-sm text-stone-800 dark:text-gray-200 space-y-4">
             <p className="roboto-condensed-700 tracking-tight">Detalhes de Contato</p>
             <address className="not-italic space-y-3">
               

@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6 mb-6">
 
         {/* Follow us + Socials */}
-        <div className="flex flex-col items-start gap-2">
+        <div className="flex flex-col items-center md:items-start gap-2">
           <p className="text-sm text-neutral-300">Gaditas</p>
           <div className="flex gap-3 text-xl text-neutral-300">
             <a href="https://instagram.com/gaditas" target="_blank" rel="noopener noreferrer">

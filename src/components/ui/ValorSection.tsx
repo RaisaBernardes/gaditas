@@ -8,11 +8,11 @@ import ScrollFadeSection from '../animations/ScrollFadeSection';
 export default function ValuesSplitLeftText() {
   return (
     <section id="sobre" className="bg-white dark:bg-neutral-900 px-4 md:px-10 py-24 md:py-36 max-w-[1380px]">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-12 items-end">
         {/* LEFT CONTENT */}
         <div className="space-y-3 md:space-y-6 self-end">
           <ScrollFadeSection>
-            <h2 className="text-4xl md:text-6xl  text-stone-800 dark:text-white font-['Teko']">
+            <h2 className="text-4xl md:text-6xl font-medium text-stone-800 dark:text-white font-['Teko']">
               Mais do que uma construtora. Um parceiro de confiança.
             </h2>
           </ScrollFadeSection>
@@ -22,11 +22,11 @@ export default function ValuesSplitLeftText() {
             duration ={0.8}
           >
           <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg">
-            Somos uma construtora de Campo Grande comprometida com excelência, transparência e proximidade em 
+            Somos uma construtora de Campo Grande-MS comprometida com excelência, transparência e proximidade em 
             cada obra. Atuamos em todo tipo de projeto: residenciais, comerciais, reformas, ampliações, áreas 
-            de lazer e muito mais. Aqui, você não é apenas cliente, é parte ativa da construção. Cada etapa é 
+            de lazer, entre outros. Aqui, você não é apenas cliente, é parte ativa da construção. Cada etapa é 
             executada com atenção aos detalhes, diálogo direto e respeito absoluto pelo que é mais importante 
-            pra você: um resultado que gera satisfação.
+            pra você: um resultado de qualidade.
           </p>
           </ScrollFadeSection>
         </div>

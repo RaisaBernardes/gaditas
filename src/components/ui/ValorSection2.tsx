@@ -31,7 +31,7 @@ const features = [
 
 export default function ValuesSplitCentered() {
   return (
-    <section className="bg-white dark:bg-neutral-900 py-20 md:py-32 px-4 md:px-8">
+    <section className="bg-white dark:bg-neutral-900 py-8 md:py-32 px-4 md:px-8">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
         {/* Heading */}
           <h2 className="text-5xl md:text-6xl text-stone-800 dark:text-white teko-title">

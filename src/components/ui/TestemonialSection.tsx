@@ -7,13 +7,17 @@ export default function TestimonialSection() {
         
         {/* TÍTULO E DESCRIÇÃO */}
         <div className="space-y-4 z-20 max-w-lg mb-16">
-          <h3 className="uppercase tracking-widest text-xs text-neutral-400 geist-mono-400 ">
+          <h3 className="uppercase tracking-widest text-xs text-neutral-400 geist-mono-400 pb-2">
             DEPOIMENTOS
           </h3>
-          <h2 className="text-4xl md:text-6xl text-stone-800 dark:text-white teko-title">
+          <h2 className="text-4xl md:text-6xl text-stone-800 dark:text-white teko-title md:hidden">
+            O que nossos clientes dizem 
+            <span><br/>sobre nós</span> 
+          </h2>
+          <h2 className="text-4xl md:text-6xl text-stone-800 dark:text-white teko-title hidden md:block">
             O que nossos clientes dizem sobre nós
           </h2>
-          <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg">
+          <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg max-w-100">
             Depoimentos de quem viveu a experiência de um projeto feito com excelência.
           </p>
         </div>
@@ -27,7 +31,7 @@ export default function TestimonialSection() {
               <p className="text-xs font-semibold text-neutral-500 dark:text-gray-400 uppercase mb-1">
                 Serviço realizado:
               </p>
-              <p className="text-lg text-stone-800 dark:text-white font-medium">
+              <p className="text-md text-stone-800 dark:text-white font-medium">
                 Nome do serviço
               </p>
             </div>
@@ -36,7 +40,7 @@ export default function TestimonialSection() {
           {/* COLUNA DIREITA */}
           <div className="bg-neutral-300 p-8 md:p-12 flex flex-col justify-between">
             <div>
-              <p className="text-4xl text-stone-800 mb-6">“</p>
+              <p className="text-4xl text-stone-800 ">“</p>
               <p className="text-xl text-stone-800 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida magna id ipsum
                 lacinia, sit amet ullamcorper enim bibendum. Phasellus leo ligula, feugiat sit amet nisl
