@@ -43,11 +43,11 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden flex flex-col items-start mt-4 gap-4 px-2 pb-4 text-sm font-light text-neutral-800 font-[family-name:var(--font-geist-mono)]">
-            <ScrollToSectionLink sectionId="inicio"  onClick={closeMenu} className="hover:text-black">Início</ScrollToSectionLink>
-            <ScrollToSectionLink sectionId="sobre" onClick={closeMenu} className="hover:text-black">Sobre</ScrollToSectionLink>
-            <ScrollToSectionLink sectionId="servicos" onClick={closeMenu} className="hover:text-black">Serviços</ScrollToSectionLink>
-            <ScrollToSectionLink sectionId="contato" onClick={closeMenu} className="hover:text-black">Contato</ScrollToSectionLink>
+          <div className="md:hidden flex flex-col items-start mt-4 gap-6 px-2 pb-6 text-sm font-light text-neutral-800">
+            <ScrollToSectionLink sectionId="inicio"  onClick={closeMenu} className="hover:text-black geist-mono-400 uppercase">Início</ScrollToSectionLink>
+            <ScrollToSectionLink sectionId="sobre" onClick={closeMenu} className="hover:text-black geist-mono-400 uppercase">Sobre</ScrollToSectionLink>
+            <ScrollToSectionLink sectionId="servicos" onClick={closeMenu} className="hover:text-black geist-mono-400 uppercase">Serviços</ScrollToSectionLink>
+            <ScrollToSectionLink sectionId="contato" onClick={closeMenu} className="hover:text-black geist-mono-400 uppercase">Contato</ScrollToSectionLink>
           </div>
         )}
       </div>

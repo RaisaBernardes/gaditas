@@ -55,7 +55,7 @@ export default function ServicesParallax() {
     <section id="servicos" className="flex flex-col md:flex-row bg-white dark:bg-neutral-900 px-4 py-8 md:py-24 md:pt-40 items-start mx-auto gap-8 max-w-[1380px]">
       
       {/* LEFT SIDE */}
-      <div className="md:space-y-2 w-full justify-start md:w-1/2 md:sticky top-24 px-4 md:px-8 flex flex-col max-w-[600px] mx-auto md:mx-0">
+      <div className="md:space-y-2 w-full justify-start md:w-1/2 md:sticky top-24 md:px-8 flex flex-col max-w-[600px] mx-auto md:mx-0">
         <h3 className="uppercase tracking-widest text-xs pb-2 text-neutral-400 geist-mono-400 ">
           Nossos Serviços
         </h3>
@@ -78,7 +78,7 @@ export default function ServicesParallax() {
       {/* RIGHT SIDE */}
       <div
         ref={scrollRef}
-        className="w-full md:w-1/2 pr-0 md:pr-16 md:mt-100"
+        className="w-full md:w-1/2 pr-0 md:pr-16  md:mt-180 lg:mt-100"
       >
         <motion.div
           style={{ y: isMobile ? undefined : y }}
@@ -88,9 +88,9 @@ export default function ServicesParallax() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-neutral-100 dark:bg-neutral-800 rounded-xl shadow-md overflow-hidden flex flex-col md:flex-row items-center p-4 md:p-6 md:gap-4 md:gap-0 max-w-full md:max-w-2xl"
+              className="bg-neutral-100 dark:bg-neutral-800 rounded-xl shadow-md overflow-hidden flex flex-col lg:flex-row items-center p-4 md:p-6 lg:gap-4 md:max-w-2xl max-w-[600px] mx-auto"
             >
-              <div className="relative w-full h-40 md:w-3/5 md:h-48 dark:bg-neutral-700 rounded-md p-2 md:mr-10">
+              <div className="relative w-full h-40 md:w-3/5 md:h-48 dark:bg-neutral-700 rounded-md p-2 xl:mr-10">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -103,7 +103,7 @@ export default function ServicesParallax() {
                 <h3 className="text-2xl text-stone-800 dark:text-white teko-subtitle">
                   {service.title}
                 </h3>
-                <p className="text-sm text-neutral-600 dark:text-neutral-300 pt-1 md:pt-2">
+                <p className="text-sm text-neutral-600 dark:text-neutral-300 pt-1 md:pt-2 max-w-100">
                   {service.description}
                 </p>
               </div>

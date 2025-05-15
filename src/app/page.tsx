@@ -42,7 +42,7 @@ export default function Home() {
       {showSplash && <SplashScreen onComplete={handleSplashComplete} />}
 
       {/* Esconde todo o conteúdo até o splash sair */}
-      <div className={`${showSplash ? 'hidden' : 'block'}`}>
+      <div className={`${showSplash ? 'hidden' : 'block'} `}>
         <main>
           <ScrollToHashOnLoad />
           <HeroSection />

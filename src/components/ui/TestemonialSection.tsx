@@ -3,7 +3,7 @@
 export default function TestimonialSection() {
   return (
     <section className="bg-neutral-100 dark:bg-neutral-900 py-24 px-4 md:px-8 mt-20 md:pb-36">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col items-start">
+      <div className="max-w-7xl mx-auto flex flex-col items-start">
         
         {/* TÍTULO E DESCRIÇÃO */}
         <div className="space-y-4 z-20 max-w-lg mb-16">
@@ -41,7 +41,7 @@ export default function TestimonialSection() {
           <div className="bg-neutral-300 p-8 md:p-12 flex flex-col justify-between">
             <div>
               <p className="text-4xl text-stone-800 ">“</p>
-              <p className="text-xl text-stone-800 leading-relaxed">
+              <p className="text-md md:text-xl text-stone-800 leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida magna id ipsum
                 lacinia, sit amet ullamcorper enim bibendum. Phasellus leo ligula, feugiat sit amet nisl
                 at, hendrerit dictum elit. Duis et cursus magna, sed suscipit diam.
