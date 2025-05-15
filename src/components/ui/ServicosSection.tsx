@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useMediaQuery } from 'usehooks-ts';
+import ScrollFadeSection from "@/components/animations/ScrollFadeSectionFramer";
 
 const services = [
   {
@@ -52,30 +53,51 @@ export default function ServicesParallax() {
   const isMobile = useMediaQuery('(max-width: 768px)');
 
   return (
-    <section id="servicos" className="flex flex-col md:flex-row bg-white dark:bg-neutral-900 px-4 py-8 md:py-24 md:pt-40 items-start mx-auto gap-8 max-w-[1380px]">
+    <section id="servicos" className="flex flex-col md:flex-row bg-white dark:bg-neutral-900 px-4 py-8 md:py-24 pt-20 md:pt-40 items-start mx-auto gap-8 max-w-[1380px]">
       
       {/* LEFT SIDE */}
       <div className="md:space-y-2 w-full justify-start md:w-1/2 md:sticky top-24 md:px-8 flex flex-col max-w-[600px] mx-auto md:mx-0">
-        <h3 className="uppercase tracking-widest text-xs pb-2 text-neutral-400 geist-mono-400 ">
-          Nossos Serviços
-        </h3>
-        <h2 className="text-4xl md:text-5xl  text-stone-800 dark:text-white teko-title">
-          Construção sob medida e execução com excelência.
-        </h2>
-        <p className="mt-2 text-base md:text-lg text-neutral-600 dark:text-gray-300 max-w-100">
-          Da fundação ao acabamento, criamos obras pensadas para durar e encantar.
-        </p>
+        <ScrollFadeSection
+          delay = {0.2}
+          duration = {0.4}
+          offsetY={10}>
+          <h3 className="uppercase tracking-widest text-xs pb-2 text-neutral-400 geist-mono-400 ">
+            Nossos Serviços
+          </h3>
+        </ScrollFadeSection>
+        <ScrollFadeSection
+          delay = {0.2}
+          duration = {0.4}
+          offsetY={10}>
+          <h2 className="text-5xl text-stone-800 dark:text-white teko-title">
+            Construção sob medida e execução com excelência.
+          </h2>
+        </ScrollFadeSection>
+        <ScrollFadeSection
+          delay = {0.2}
+          duration = {0.4}
+          offsetY={10}>
+          <p className="mt-2 text-base md:text-lg text-neutral-600 dark:text-gray-300 max-w-100">
+            Da fundação ao acabamento, criamos obras pensadas para durar e encantar.
+          </p>
+        </ScrollFadeSection>
         <div className="flex gap-2 items-start flex-col sm:flex-row mt-6">
-          <a
-            className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-700 bg-stone-800 text-sm sm:text-sm h-8 sm:h-10 px-4 sm:px-5 sm:w-auto"
-            href="#orcamento"
-          >
-            Solicitar Orçamento
-          </a>
+          <ScrollFadeSection
+            delay = {0.2}
+            duration = {0.4}
+            offsetY={10}>
+            <a
+              className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-700 bg-stone-800 text-sm sm:text-sm h-8 sm:h-10 px-4 sm:px-5 sm:w-auto"
+              href="#orcamento"
+            >
+              Solicitar Orçamento
+            </a>
+          </ScrollFadeSection>
         </div>
       </div>
 
       {/* RIGHT SIDE */}
+      
       <div
         ref={scrollRef}
         className="w-full md:w-1/2 pr-0 md:pr-16  md:mt-180 lg:mt-100"
@@ -84,8 +106,8 @@ export default function ServicesParallax() {
           style={{ y: isMobile ? undefined : y }}
           className="space-y-10 relative"
         >
-
           {services.map((service, index) => (
+            
             <div
               key={index}
               className="bg-neutral-100 dark:bg-neutral-800 rounded-xl shadow-md overflow-hidden flex flex-col lg:flex-row items-center p-4 md:p-6 lg:gap-4 md:max-w-2xl max-w-[600px] mx-auto"
@@ -100,17 +122,22 @@ export default function ServicesParallax() {
                 />
               </div>
               <div className="md:w-3/5 text-center md:text-left">
+              
                 <h3 className="text-2xl text-stone-800 dark:text-white teko-subtitle">
                   {service.title}
                 </h3>
+                
                 <p className="text-sm text-neutral-600 dark:text-neutral-300 pt-1 md:pt-2 max-w-100">
                   {service.description}
                 </p>
               </div>
+              
             </div>
           ))}
+          
         </motion.div>
       </div>
+      
     </section>
   );
 }

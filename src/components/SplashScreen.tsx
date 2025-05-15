@@ -44,8 +44,8 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
 
     tl.to(splashRef.current, {
       y: '100%',
-      duration: 1.2,
-      delay: 1,
+      duration: 1.0,
+      delay: 0.8,
       ease: 'power4.inOut',
     })
   }, [onComplete])

@@ -1,5 +1,6 @@
 import ContactForm from "./ContactForm";
 import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import ScrollFadeSection from "@/components/animations/ScrollFadeSectionFramer";
 
 export default function ContactSection() {
   return (
@@ -7,10 +8,16 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-3 md:gap-12">
         
         {/* LEFT SIDE */}
+       
         <div className="space-y-3 md:space-y-6">
-          <h2 className="text-4xl md:text-7xl text-stone-800 dark:text-white teko-title">
-          Vamos tirar seu projeto do papel?
+           <ScrollFadeSection  
+              delay = {0.2}
+              duration = {0.6}
+              offsetY={10}>
+          <h2 className="text-5xl md:text-7xl text-stone-800 dark:text-white teko-title">
+          Vamos tirar seu <br/> projeto do papel?
           </h2>
+          </ScrollFadeSection>
           <p className="text-lg text-stone-800 dark:text-gray-300 max-w-md">
             Preencha o formulário e receba um atendimento claro, ágil e alinhado com o que você realmente precisa.
           </p>
@@ -49,7 +56,12 @@ export default function ContactSection() {
 
         {/* RIGHT SIDE - FORM */}
         <div>
-          <ContactForm />
+          <ScrollFadeSection  
+              delay = {0.2}
+              duration = {0.4}
+              offsetY={10}>
+            <ContactForm />
+          </ScrollFadeSection>
         </div>
       </div>
     </section>

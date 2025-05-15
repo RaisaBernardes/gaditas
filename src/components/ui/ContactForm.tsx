@@ -68,7 +68,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="py-8">
+    <div className="py-8 md:py-2">
       <div className="mx-auto lg:max-w-xl">
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Nome */}

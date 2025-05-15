@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import ScrollFadeSection from "../animations/ScrollFadeSection";
+import ScrollFadeSection from "@/components/animations/ScrollFadeSectionFramer";
 
 export default function ValuesSplitLeftText() {
   return (
@@ -12,12 +12,18 @@ export default function ValuesSplitLeftText() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-end lg:gap-12">
         {/* LEFT CONTENT */}
         <div className="md:w-1/2 space-y-3 md:space-y-6">
-          <ScrollFadeSection>
-            <h2 className="text-4xl md:text-6xl font-medium text-stone-800 dark:text-white font-['Teko']">
+          <ScrollFadeSection
+            delay = {0.2}
+            duration = {0.2}
+            offsetY={10}>
+            <h2 className="text-5xl md:text-6xl font-medium text-stone-800 dark:text-white font-['Teko']">
               Mais do que uma construtora. Um parceiro de confiança.
             </h2>
           </ScrollFadeSection>
-          <ScrollFadeSection distance={5} threshold={0.3} duration={0.8}>
+          <ScrollFadeSection 
+            delay = {0.2}
+            duration = {0.4}
+            offsetY={10}>
             <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg">
               Somos uma construtora de Campo Grande-MS comprometida com
               excelência, transparência e proximidade em cada obra. Atuamos em
@@ -30,9 +36,9 @@ export default function ValuesSplitLeftText() {
           </ScrollFadeSection>
         </div>
 
-        {/* RIGHT IMAGE */}
-        <ScrollFadeSection distance={5} threshold={0.3} duration={0.8}>
-           <div className="relative self-end -mb-4 md:-mb-20">
+        {/* RIGHT IMAGE */} 
+        <ScrollFadeSection>          
+        <div className="relative self-end -mb-4 md:-mb-20">
             <Image
               src="/images/estrutura.png"
               alt="Estrutura"
@@ -42,7 +48,7 @@ export default function ValuesSplitLeftText() {
               priority
             />
           </div>
-        </ScrollFadeSection>
+          </ScrollFadeSection>
       </div>
     </section>
   );
