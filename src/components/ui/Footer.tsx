@@ -3,15 +3,15 @@ import { FaInstagram, FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons
 export default function Footer() {
   return (
     <footer
-    className="bg-stone-800 relative dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 text-sm py-12 px-4"
+    className="bg-[#061423] relative  text-[#E7E9EC] dark:text-neutral-300 text-sm py-12 px-4"
    
   >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-6 mb-6">
 
         {/* Follow us + Socials */}
         <div className="flex flex-col items-center md:items-start gap-2">
-          <p className="text-sm text-neutral-300">Gaditas</p>
-          <div className="flex gap-3 text-xl text-neutral-300">
+          <p className="text-sm text-[#E7E9EC]">Gaditas</p>
+          <div className="flex gap-3 text-xl text-[#E7E9EC]">
             <a href="https://instagram.com/gaditas" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="hover:text-white transition" />
             </a>
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="text-center md:text-center text-xs text-neutral-300">
+        <div className="text-center md:text-center text-xs text-[#E7E9EC]]">
           © {new Date().getFullYear()} Gaditas Engenharia. Todos os direitos reservados.
         </div>
 
@@ -40,22 +40,22 @@ export default function Footer() {
 
           <div className="flex items-center gap-1">
             <FaMapMarkerAlt className="text-white" />
-            <span className="text-neutral-300">Campo Grande - MS</span>
+            <span className="text-[#E7E9EC]">Campo Grande - MS</span>
         </div>
         </div>
       </div>
 
-      <hr className=" border-neutral-500 my-4" />
+      <hr className=" border-[#8E9BA7] my-4" />
 
       {/* Acknowledgment */}
-      <div className="max-w-5xl mx-auto text-center text-neutral-400 text-sm">
+      <div className="max-w-5xl mx-auto text-center text-[#E7E9EC] text-sm">
         A Gaditas Engenharia reconhece e valoriza as comunidades locais e o solo onde construímos nossos projetos. 
         Nosso compromisso é desenvolver com respeito, responsabilidade e impacto positivo duradouro para todos que 
         compartilham este espaço conosco.
       </div>
 
       {/* Site credit */}
-      <div className="text-right text-xs mt-4 text-neutral-400">
+      <div className="text-right text-xs mt-4 text-[#E7E9EC]">
         <a href="https://wa.me/5581999458630" target="_blank" rel="noopener noreferrer" className="hover:underline">
           Desenvolvido por Millon
         </a>

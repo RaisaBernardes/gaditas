@@ -16,7 +16,7 @@ export default function ValuesSplitLeftText() {
             delay = {0.2}
             duration = {0.2}
             offsetY={10}>
-            <h2 className="text-5xl md:text-6xl font-medium text-stone-800 dark:text-white font-['Teko']">
+            <h2 className="text-5xl md:text-6xl font-medium text-[#071A2D] dark:text-white font-['Teko']">
               Mais do que uma construtora. Um parceiro de confiança.
             </h2>
           </ScrollFadeSection>
@@ -24,7 +24,7 @@ export default function ValuesSplitLeftText() {
             delay = {0.2}
             duration = {0.4}
             offsetY={10}>
-            <p className="text-neutral-600 dark:text-gray-300 text-base md:text-lg">
+            <p className="text-[#5B6D7F] dark:text-gray-300 text-base md:text-lg">
               Somos uma construtora de Campo Grande-MS comprometida com
               excelência, transparência e proximidade em cada obra. Atuamos em
               todo tipo de projeto: residenciais, comerciais, reformas,

@@ -74,7 +74,7 @@ export default function ContactForm() {
           {/* Nome */}
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-              Nome <span className="text-red-500">*</span>
+              Nome <span className="text-red-700">*</span>
             </label>
             <input
               type="text"
@@ -83,9 +83,9 @@ export default function ContactForm() {
               onChange={handleChange}
               value={formData.name}
               placeholder="Seu nome"
-              className={`mt-1 p-2 w-full border rounded-md ${errors.name ? 'border-red-500' : ''}`}
+              className={`mt-1 p-2 w-full border rounded-md ${errors.name ? 'border-red-700' : ''}`}
             />
-            {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+            {errors.name && <p className="text-red-700 text-sm">{errors.name}</p>}
           </div>
 
           {/* Email (opcional) */}
@@ -100,14 +100,14 @@ export default function ContactForm() {
               onChange={handleChange}
               value={formData.email}
               placeholder="seu@email.com"
-              className="mt-1 p-2 w-full border rounded-md"
+              className="mt-1 p-2 w-full border rounded-md text-[#5B6D7F]"
             />
           </div>
 
           {/* WhatsApp */}
           <div>
             <label htmlFor="whatsapp" className="block text-sm font-medium text-gray-700">
-              WhatsApp <span className="text-red-500">*</span>
+              WhatsApp <span className="text-red-700">*</span>
             </label>
             <input
               type="text"
@@ -116,9 +116,9 @@ export default function ContactForm() {
               onChange={handleChange}
               value={formData.whatsapp}
               placeholder="(99) 99999-9999"
-              className={`mt-1 p-2 w-full border rounded-md ${errors.whatsapp ? 'border-red-500' : ''}`}
+              className={`text-[#5B6D7F] mt-1 p-2 w-full border rounded-md ${errors.whatsapp ? 'border-red-700' : ''}`}
             />
-            {errors.whatsapp && <p className="text-red-500 text-sm">{errors.whatsapp}</p>}
+            {errors.whatsapp && <p className="text-red-700 text-sm">{errors.whatsapp}</p>}
           </div>
 
           {/* Mensagem */}
@@ -133,24 +133,24 @@ export default function ContactForm() {
               onChange={handleChange}
               value={formData.message}
               placeholder="Fale um pouco sobre seu projeto..."
-              className="mt-1 p-2 w-full border rounded-md"
+              className="text-[#5B6D7F] mt-1 p-2 w-full border rounded-md"
             />
           </div>
 
           {/* Botão */}
           <button
             type="submit"
-            className="w-full text-white px-6 py-3 rounded-md hover:bg-neutral-800 bg-neutral-700 transition geist-mono-400 text-base"
+            className="w-full text-white px-6 py-3 rounded-md hover:bg-[#071A2D] bg-[#0A2540] transition geist-mono-400 text-base"
           >
             {status === 'loading' ? 'Enviando...' : 'Enviar'}
           </button>
 
           {/* Status */}
           {status === 'success' && (
-            <p className="text-green-600 font-medium text-center mt-4">Mensagem enviada com sucesso!</p>
+            <p className="text-green-700 font-medium text-center mt-4">Mensagem enviada com sucesso!</p>
           )}
           {status === 'error' && (
-            <p className="text-red-800 font-medium text-center mt-4">Erro ao enviar. Tente novamente.</p>
+            <p className="text-red-700 font-medium text-center mt-4">Erro ao enviar. Tente novamente.</p>
           )}
         </form>
       </div>

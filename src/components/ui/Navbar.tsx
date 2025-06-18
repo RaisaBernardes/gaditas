@@ -16,11 +16,11 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Left - Brand + Links */}
-          <ul className="flex gap-6 text-sm font-light text-neutral-500 geist-mono-400 uppercase">
-            <li><ScrollToSectionLink sectionId="inicio" className="text-stone-800 font-medium">GADITAS</ScrollToSectionLink></li>
-            <li className="hidden md:block"><ScrollToSectionLink sectionId="inicio" className="hover:text-neutral-800">Início</ScrollToSectionLink></li>
-            <li className="hidden md:block"><ScrollToSectionLink sectionId="sobre" className="hover:text-neutral-800">Sobre</ScrollToSectionLink></li>
-            <li className="hidden md:block"><ScrollToSectionLink sectionId="servicos" className="hover:text-neutral-800">Serviços</ScrollToSectionLink></li>
+          <ul className="flex gap-6 text-sm font-light text-[#8E9BA7] geist-mono-400 uppercase">
+            <li><ScrollToSectionLink sectionId="inicio" className="text-[#071A2D] font-medium">GADITAS</ScrollToSectionLink></li>
+            <li className="hidden md:block"><ScrollToSectionLink sectionId="inicio" className="hover:text-[#061423]">Início</ScrollToSectionLink></li>
+            <li className="hidden md:block"><ScrollToSectionLink sectionId="sobre" className="hover:text-[#061423]">Sobre</ScrollToSectionLink></li>
+            <li className="hidden md:block"><ScrollToSectionLink sectionId="servicos" className="hover:text-[#061423]">Serviços</ScrollToSectionLink></li>
           </ul>
 
       
@@ -30,7 +30,7 @@ const Navbar = () => {
             <Link
               href="#contato"
               scroll={true}
-              className="hidden md:block text-sm font-light bg-white text-stone-800 px-4 py-2 rounded-4xl hover:bg-neutral-100 hover:text-neutral-800 border-1 transition geist-mono-400"
+              className="hidden md:block text-sm font-light bg-white text-[#071A2D] px-4 py-2 rounded-4xl hover:bg-neutral-100 hover:text-neutral-800 border-1 transition geist-mono-400"
             >
               Contato
             </Link>

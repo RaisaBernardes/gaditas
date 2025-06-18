@@ -31,12 +31,12 @@ export default function HeroSection() {
 
       {/* Content */}
       {showContent && (
-        <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-black">
+        <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center text-[#071A2D]">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: 'easeOut' }}
-            className="text-6xl md:text-8xl text-stone-800 teko-hero pt-6"
+            className="text-6xl md:text-8xl text-[#071A2D] teko-hero pt-6"
           >
             Sua <span className="font-semibold">obra.</span> <br /> Nosso{' '}
             <span className="font-semibold">compromisso.</span>
@@ -46,7 +46,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
-            className="mt-6 text-sm md:text-base tracking-wide text-neutral-700 max-w-xl geist-mono-500"
+            className="mt-6 text-sm md:text-base tracking-wide text-[#3B5166] max-w-xl geist-mono-500"
           >
             Projetos residenciais, reformas, áreas de lazer, pavimentações e muito mais, feitos com rigor técnico,
             comunicação direta e um nível de cuidado que você sente do início ao fim.
@@ -59,7 +59,7 @@ export default function HeroSection() {
             className="flex gap-4 items-center flex-col sm:flex-row mt-6"
           >
             <a
-              className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-800 bg-neutral-700 text-sm sm:text-sm h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
+              className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-[#071A2D] bg-[#0A2540] text-sm sm:text-sm h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
               href="https://wa.me/5571981065728"
             >
               Começar projeto

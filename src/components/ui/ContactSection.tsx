@@ -14,32 +14,32 @@ export default function ContactSection() {
               delay = {0.2}
               duration = {0.6}
               offsetY={10}>
-          <h2 className="text-5xl md:text-7xl text-stone-800 dark:text-white teko-title">
+          <h2 className="text-5xl md:text-7xl text-[#071A2D] dark:text-white teko-title">
           Vamos tirar seu <br/> projeto do papel?
           </h2>
           </ScrollFadeSection>
-          <p className="text-lg text-stone-800 dark:text-gray-300 max-w-md">
+          <p className="text-lg text-[#071A2D] dark:text-gray-300 max-w-md">
             Preencha o formulário e receba um atendimento claro, ágil e alinhado com o que você realmente precisa.
           </p>
 
-          <div className="pt-6 text-base md:text-sm text-stone-800 dark:text-gray-200 space-y-4">
+          <div className="pt-6 text-base md:text-sm text-[#071A2D] dark:text-gray-200 space-y-4">
             <p className="roboto-condensed-700 tracking-tight">Detalhes de Contato</p>
             <address className="not-italic space-y-3">
               
               {/* Localização */}
               <div className="flex items-center gap-2">
-                <FaMapMarkerAlt className="text-stone-800" />
+                <FaMapMarkerAlt className="text-[#071A2D]]" />
                 <span>Campo Grande - MS</span>
               </div>
 
               {/* WhatsApp */}
               <div className="flex items-center gap-2">
-                <FaWhatsapp className="text-stone-800" />
+                <FaWhatsapp className="text-[#071A2D]" />
                 <a
                   href="https://wa.me/5571981065728" // numero whatsapp
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-stone-800"
+                  className="underline hover:text-[#071A2D]"
                 >
                   (71) 9.8106-5728
                 </a>
@@ -47,7 +47,7 @@ export default function ContactSection() {
 
               {/* Email */}
               <div className="flex items-center gap-2">
-                <FaEnvelope className="text-stone-800" />
+                <FaEnvelope className="text-[#071A2D]" />
                 <span>orçamento@gaditascontato.com</span>
               </div>
             </address>
