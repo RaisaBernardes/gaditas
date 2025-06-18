@@ -53,7 +53,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
   return (
     <div
       ref={splashRef}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-stone-900"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-[#04101B]"
       style={{ transform: 'translateY(0)' }}
     >
       <div
