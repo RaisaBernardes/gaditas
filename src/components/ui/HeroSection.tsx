@@ -60,7 +60,7 @@ export default function HeroSection() {
           >
             <a
               className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-800 bg-neutral-700 text-sm sm:text-sm h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-              href="#orcamento"
+              href="https://wa.me/5571981065728"
             >
               Começar projeto
             </a>

@@ -88,7 +88,7 @@ export default function ServicesParallax() {
             offsetY={10}>
             <a
               className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-neutral-700 bg-stone-800 text-sm sm:text-sm h-8 sm:h-10 px-4 sm:px-5 sm:w-auto"
-              href="#orcamento"
+              href="https://wa.me/5571981065728"
             >
               Solicitar Orçamento
             </a>

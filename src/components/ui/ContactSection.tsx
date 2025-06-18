@@ -36,12 +36,12 @@ export default function ContactSection() {
               <div className="flex items-center gap-2">
                 <FaWhatsapp className="text-stone-800" />
                 <a
-                  href="https://wa.me/5599999999999" // substitua pelo número real com DDI
+                  href="https://wa.me/5571981065728" // numero whatsapp
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-stone-800"
                 >
-                  (99) 9.9999-9999
+                  (71) 9.8106-5728
                 </a>
               </div>
 

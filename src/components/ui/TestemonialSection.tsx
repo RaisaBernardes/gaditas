@@ -45,7 +45,7 @@ export default function TestimonialSection() {
                 Serviço realizado:
               </p>
               <p className="text-md text-stone-800 dark:text-white font-medium">
-                Nome do serviço
+                Reforma de casa
               </p>
             </div>
           </div>
@@ -55,17 +55,15 @@ export default function TestimonialSection() {
             <div>
               <p className="text-4xl text-stone-800 ">“</p>
               <p className="text-md md:text-xl text-stone-800 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida magna id ipsum
-                lacinia, sit amet ullamcorper enim bibendum. Phasellus leo ligula, feugiat sit amet nisl
-                at, hendrerit dictum elit. Duis et cursus magna, sed suscipit diam.
+                Desde o primeiro contato, senti que estava lidando com uma empresa séria e comprometida. A equipe da Gaditas nos acompanhou em cada etapa da obra, sempre com transparência, organização e atenção aos detalhes. O resultado ficou além do que imaginávamos! Recomendo muito!
               </p>
             </div>
             <div className="mt-8">
               <p className="text-base font-semibold text-stone-800 roboto-condensed-700">
-                Simon Levinson
+                Mariana Ferreira
               </p>
               <p className="text-sm text-stone-800">
-                Aqui é a ocupação da pessoa
+                Cliente residencial
               </p>
             </div>
           </div>

@@ -23,7 +23,7 @@ const Finalizadora = () => {
         <Title text="Toda grande obra começa com uma boa escolha.
       A sua começa aqui."/>
         <a
-          href="https://wa.me/5581999458630"
+          href="https://wa.me/5571981065728"
           target="_blank"
           rel="noopener noreferrer"
          className="geist-mono-400 inline-block px-8 py-3 border border-white rounded-full hover:bg-white hover:text-black transition"

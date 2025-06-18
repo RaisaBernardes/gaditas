@@ -13,13 +13,13 @@ export default function Footer() {
           <p className="text-sm text-neutral-300">Gaditas</p>
           <div className="flex gap-3 text-xl text-neutral-300">
             <a href="https://instagram.com/gaditas" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="hover:text-neutral-800 transition" />
+              <FaInstagram className="hover:text-white transition" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FaEnvelope className="hover:text-neutral-800 transition" />
+                <FaEnvelope className="hover:text-white transition" />
             </a>
-            <a href="https://wa.me/5599999999999" target="_blank" rel="noopener noreferrer">
-                <FaWhatsapp className="hover:text-neutral-800 transition" />
+            <a href="https://wa.me/5571981065728" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="hover:text-white transition" />
             </a>
            
             
@@ -57,7 +57,7 @@ export default function Footer() {
       {/* Site credit */}
       <div className="text-right text-xs mt-4 text-neutral-400">
         <a href="https://wa.me/5581999458630" target="_blank" rel="noopener noreferrer" className="hover:underline">
-          Site por Raisa Bernardes
+          Desenvolvido por Millon
         </a>
       </div>
     </footer>
