@@ -62,7 +62,7 @@ export default function HeroSection() {
               className="geist-mono-400 rounded-full border border-solid border-transparent transition-colors flex items-center justify-center text-background gap-2 hover:bg-[#071A2D] bg-[#0A2540] text-sm sm:text-sm h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
               href="https://wa.me/5571981065728"
             >
-              Começar projeto
+              Solicitar orçamento
             </a>
           </motion.div>
         </div>
