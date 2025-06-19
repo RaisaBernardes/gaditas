@@ -1,5 +1,6 @@
 "use client";
 import ScrollFadeSection from "@/components/animations/ScrollFadeSectionFramer";
+import Image from 'next/image';
 
 export default function TestimonialSection() {
   return (
@@ -50,15 +51,26 @@ export default function TestimonialSection() {
             </div>
           </div>
 
-          {/* COLUNA DIREITA */}
-          <div className="bg-[#283B59] p-8 md:p-12 flex flex-col justify-between">
-            <div>
+         {/* COLUNA DIREITA */}
+          <div className="relative  p-8 md:p-12 flex flex-col justify-between overflow-hidden">
+
+            {/* Background image */}
+            <Image
+              src="/images/img_testemonials2.svg" // atualize para o seu path correto
+              alt="fundo decorativo"
+              fill
+              className="object-cover pointer-events-none z-0"
+            />
+
+            {/* Conteúdo sobre o fundo */}
+            <div className="relative z-10">
               <p className="text-4xl md:text-9xl text-[#E7E9EC] ">“</p>
               <p className="text-md md:text-lg text-[#E7E9EC] leading-relaxed">
                 Desde o primeiro contato, senti que estava lidando com uma empresa séria e comprometida. A equipe da Gaditas nos acompanhou em cada etapa da obra, sempre com transparência, organização e atenção aos detalhes. O resultado ficou além do que imaginávamos! Recomendo muito!
               </p>
             </div>
-            <div className="mt-8">
+
+            <div className="mt-8 relative z-10">
               <p className="text-base font-semibold text-[#E7E9EC] roboto-condensed-700">
                 Mariana Ferreira
               </p>
@@ -66,7 +78,9 @@ export default function TestimonialSection() {
                 Cliente residencial
               </p>
             </div>
+
           </div>
+
         </div>
         </ScrollFadeSection>
       </div>
