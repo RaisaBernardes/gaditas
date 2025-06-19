@@ -58,7 +58,7 @@ const SplashScreen = ({ onComplete }: { onComplete: () => void }) => {
     >
       <div
         ref={textRef}
-        className="flex gap-[0.04em] text-white text-md md:text-xl font-[family-name:var(--font-geist-mono)] tracking-widest uppercase"
+        className="flex gap-[0.04em] text-white text-md md:text-xl geist-mono-400  tracking-widest uppercase"
       >
         {'gaditas'.split('').map((char, index) => (
           <span key={index} className="inline-block">
